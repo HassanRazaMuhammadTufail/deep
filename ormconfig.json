@@ -1,0 +1,20 @@
+{
+    "name": "default",
+    "type": "postgres",
+    "synchronize": true,
+    "logging": true,
+    "entities": [
+        "./src/entities/*.ts"
+    ],
+    "migrations": [
+        "src/migrations/*.ts"
+    ],
+    "host": "fanny.db.elephantsql.com",
+    "database": "xtsjnnph",
+    "username": "xtsjnnph",
+    "password": "vIW7rdWq72xxUj2K0OL7xZTL4IPsdXv8",
+    "cli": {
+        "entitiesDir": "src/entities",
+        "migrationsDir": "src/migrations"
+    }
+}
