@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import * as InventoryController from '../controllers/controllers';
 
-const router = Router();
+const router: Router = Router();
 
 router.get('/:item/quantity', InventoryController.getInventory);
 router.post('/:item/add', InventoryController.addInventory);

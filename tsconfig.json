@@ -1,29 +1,4 @@
 {
-  // "compilerOptions": {
-  //   "incremental": true,
-  //   "target": "es6", //remove
-  //   "experimentalDecorators": true,
-  //   "emitDecoratorMetadata": true,
-  //   "module": "commonjs",
-  //   "rootDir": "./src",
-  //   "moduleResolution": "node",
-  //   "baseUrl": ".",
-  //   "paths": {
-  //     "@/*": [
-  //       "./src/*"
-  //     ]
-  //   },
-  //   "declaration": true,
-  //   "sourceMap": true,
-  //   "outDir": "./dist",
-  //   "removeComments": true,
-  //   "allowSyntheticDefaultImports": true,
-  //   "esModuleInterop": true,
-  //   "forceConsistentCasingInFileNames": true,
-  //   "strict": true,
-  //   "noImplicitAny": true,
-  //   "skipLibCheck": true,
-  // },
   "compilerOptions": {
     "lib": [
       "es5",

@@ -1,8 +1,4 @@
-import {
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-} from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity('inventories')
 export class Inventory {
@@ -17,5 +13,4 @@ export class Inventory {
 
   @Column()
   expiry: Date;
-
 }
