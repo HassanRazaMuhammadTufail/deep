@@ -9,8 +9,8 @@ export let connect = async () => {
     name: 'default',
     synchronize: false,
     logging: true,
-    entities: [__dirname + '/../entities/*.ts'],
-    migrations: [__dirname + '/../migrations/**/*.ts'],
+    entities: [__dirname + '/../entities/*{.ts,.js}'],
+    migrations: [__dirname + '/../migrations/**/*{.ts,.js}'],
     cli: {
       entitiesDir: __dirname + '/entities/',
       migrationsDir: __dirname + '/migrations/',

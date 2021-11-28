@@ -4,7 +4,6 @@
   "description": "technical assessment project",
   "main": "build/index.js",
   "scripts": {
-    "star": "node dist/index.js",
     "start": "ts-node .",
     "dev": "nodemon src/index.ts",
     "build": "tsc -p .",

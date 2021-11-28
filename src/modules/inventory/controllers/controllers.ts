@@ -23,7 +23,7 @@ export const addInventory = async (req: Request, res: Response): Promise<{ [key:
   }
 };
 
-export const sellInventory = async (req: Request, res: Response) => {
+export const sellInventory = async (req: Request, res: Response): Promise<{ [key: string]: string | any }> => {
   try {
     const { value: paramValue, error: paramError } = paramSchema.validate(req.params);
     const { value, error } = sellBodySchema.validate(req.body);
@@ -42,7 +42,7 @@ export const sellInventory = async (req: Request, res: Response) => {
   }
 };
 
-export const getInventory = async (req: Request, res: Response) => {
+export const getInventory = async (req: Request, res: Response): Promise<{ [key: string]: string | any }> => {
   try {
     const { value, error } = paramSchema.validate(req.params);
     if (error) {

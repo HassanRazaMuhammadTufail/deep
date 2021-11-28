@@ -51,7 +51,7 @@ export const sellInventory = async (itemName: string, quantity: number) => {
   return true;
 };
 
-export const getInventory = async (item: string) => {
+export const getInventory = async (item: string): Promise<ItemType> => {
   const itemsArr = await inventoryRepository.getByName(item);
   if (!itemsArr.length) {
     return {

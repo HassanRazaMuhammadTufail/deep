@@ -11,14 +11,14 @@ export class InventoryRepository {
     return inventory.save(item);
   }
 
-  async updateItemQuantity({ id, quantity }: { id?: number; quantity?: number }) {
+  async updateItemQuantity({ id, quantity }: { id?: number; quantity?: number }): Promise<object> {
     if (!id || !quantity) throw new Error('Item cannot be updated');
 
     const inventory = getRepository(Inventory);
     return inventory.createQueryBuilder().update(Inventory).set({ quantity }).where('id = :id', { id }).execute();
   }
 
-  async deleteItem(idsArr: number[]) {
+  async deleteItem(idsArr: number[]): Promise<any> {
     const inventory = getRepository(Inventory);
     return inventory.delete(idsArr);
   }
@@ -33,7 +33,7 @@ export class InventoryRepository {
     return items;
   }
 
-  async deleteByTime(time: Date) {
+  async deleteByTime(time: Date): Promise<any> {
     const inventory = getRepository(Inventory);
     return inventory.delete({ expiry: LessThan(time) });
   }
