@@ -25,6 +25,17 @@ npm run start
 npm run dev
 ```
 
+## Desc
+Important Urls
+```
+base_url = http://locahost:3000
+swagger = http://locahost:3000/api-docs
+```
+Hosted on glitch
+```
+URL = https://lime-rhetorical-stitch.glitch.me
+```
+
 ## Unit Tests
 ```bash
 npm run unit:test
